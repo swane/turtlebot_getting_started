@@ -29,14 +29,20 @@ Now 'ssh' into the turtlebot.
 `password:ros`
 
 On the turtlebot, launch the following:
+
   `roslaunch turtlebot_bringup minimal.launch`
+  
 You should hear a rising tone and some positive messages on terminal (ignore the battery warning)
 In another terminal on the turtlebot (ssh in again):
+
 `	roslaunch turtlebot_navigation gmapping_demo.launch`
+
 and another terminal on turtlebot, to allow the robot to operate from the keyboard
+
 `roslaunch turtlebot_teleop keyboard_teleop.launch`
 
 On the PC:
+
 `rviz rviz`
 Select (or add) laser scan, robot model, marker array, and map.
 _A more in depth tutorial is at_ [learn.turtlebot.com](http://learn.turtlebot.com)
